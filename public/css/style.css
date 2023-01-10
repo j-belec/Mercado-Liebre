@@ -50,6 +50,17 @@ header {
   width: 45%;
 }
 
+.barra-busqueda input {
+  width: 80%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.barra-busqueda input::placeholder {
+  font-size: 16px;
+}
+
 .oracion {
   text-align: center;
   margin-bottom: 20px;
@@ -207,6 +218,7 @@ footer div p {
 .icono-footer {
   font-size: 2em;
   color: rgb(0, 26, 255);
+  margin-bottom: 10px;
 }
 
 .parte-footer {
@@ -219,7 +231,13 @@ footer div p {
 
 @media (min-width: 481px) {
   .nav {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul {
+    display: flex;
+    gap: 7px;
   }
 
   section {
@@ -246,9 +264,21 @@ footer div p {
   .burger-menu {
     display: none;
   }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .icono-footer:hover {
+    color: #0022aa;
+  }
 }
 
 @media (min-width: 769px) {
+  header {
+    font-size: 16px;
+  }
+
   .articulo {
     width: 23%;
   }
@@ -269,11 +299,6 @@ footer div p {
     margin-bottom: 0;
   }
 
-  .nav {
-    display: flex;
-    justify-content: space-around;
-  }
-
   ul {
     display: flex;
     gap: 30px;
@@ -284,13 +309,10 @@ footer div p {
     flex-wrap: wrap;
     /* justify-content: space-around; */
     column-gap: 30px;
+    font-size: 16px;
   }
 
   .parte-footer {
     width: 30%;
-  }
-
-  .icono-footer:hover {
-    color: #0022aa;
   }
 }
